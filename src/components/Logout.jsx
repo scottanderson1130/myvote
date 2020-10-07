@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/style-components/NavBar.jsx';
+import NavBar from './style-components/NavBar.jsx';
 
 const Logout = () => (
   <div>

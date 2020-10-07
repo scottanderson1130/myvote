@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 import logo from '../../../assets/myvote_sm.png';
 
 class Greeting extends React.Component {

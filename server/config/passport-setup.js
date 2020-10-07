@@ -21,7 +21,7 @@ passport.use(
       clientSecret: keys.google.clientSecret,
     },
     (accessToken, refreshToken, profile, done) => {
-      User.findOne({ voter_device_id: profile.id }).then((currentUser) => {
+      User.findOne({ googleId: profile.id }).then((currentUser) => {
         if (currentUser) {
           console.log('User is: ', currentUser);
           done(null, currentUser);
@@ -29,7 +29,7 @@ passport.use(
           new User({
             firstName: profile.name.givenName,
             lastName: profile.name.familyName,
-            voter_device_id: profile.id,
+            googleId: profile.id,
             email: '',
             address: '',
           })

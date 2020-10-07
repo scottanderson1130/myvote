@@ -1,3 +1,6 @@
+// @import "custom";
+@import "~bootstrap/scss/bootstrap";
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Roboto,
     Arial, sans-serif;
@@ -30,8 +33,8 @@ body {
   float: right;
 }
 
-.nav {
-  background-color: #73bbeb;
+.navbar {
+  background-color: #a8cfe9;
   margin: 0px;
   padding: 8px 15px;
   display: flex;
@@ -59,5 +62,13 @@ h2 {
 }
 
 .homepage-content {
+  text-align: center;
+}
+
+ul .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+.pledge {
   text-align: center;
 }

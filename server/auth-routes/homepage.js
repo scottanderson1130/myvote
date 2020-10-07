@@ -7,7 +7,7 @@ const authCheck = (req, res, next) => {
     next();
   }
 };
-router.get('/', authCheck, (req, res) => {
+router.get('/homepage', authCheck, (req, res) => {
   // NEW
   res.render('homepage');
 });

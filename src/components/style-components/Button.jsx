@@ -1,5 +1,6 @@
- import React from 'react';
+import React from 'react';
 import axios from 'axios';
+import pledgeBtn from '../../../assets/pledge_btn.png';
 
 
 
@@ -27,7 +28,7 @@ class PledgeButton extends React.Component {
   render() {
     return (
       <>
-        <h3 className='pledge-btn' onClick={this.handleClick}>Pledge</h3>
+        <img src={pledgeBtn} className='pledge-btn' onClick={this.handleClick} />
       </>
     );
   }

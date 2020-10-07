@@ -1,5 +1,6 @@
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const { join } = require("path");
+const webpack = require("webpack");
 const { HotModuleReplacementPlugin } = require("webpack");
 const htmlPlugin = new HtmlWebpackPlugin({
   template: "./client/index.html",
@@ -14,7 +15,9 @@ module.exports = {
     filename: "app.min.js",
     publicPath: "/",
   },
-  plugins: [htmlPlugin],
+  plugins: [
+    htmlPlugin
+  ],
   resolve: {
     modules: [join("node_modules"), "node_modules"],
   },
